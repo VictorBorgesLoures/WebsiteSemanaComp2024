@@ -10,6 +10,11 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5em;
+}
+
+h1 {
+    margin: 0;
 }
 
 .container {
@@ -42,12 +47,10 @@ body {
 .banner-logo {
     z-index: 98;
     position: absolute;
-    width: 20%;
     right: 0;
-    bottom: -30%;
+    bottom: -115%;
     opacity: .9;
     width: 40%;
-    bottom: -100%;
     opacity: .2;
 }
 
@@ -118,31 +121,64 @@ tbody > tr:nth-child(odd) {
     overflow-x: hidden;
 }
 
+.icons-organizadores {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    overflow: hidden;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.icons-organizadores >img {
+    width: 8%;
+    margin: 1em;
+}
+
 
 @media (max-width: 1000px) {
 
     body {
-        font-size: .9em;
+        font-size: 1.3em;
     }
 
     .banner-logo {
-        bottom: -50%;
+        bottom: -130%;
+    }
+
+    .icons-organizadores >img {
+        width: 15%;
     }
 }
 
 @media (max-width: 600px) {
 
     body {
-        font-size: .8em;
+        font-size: 1.1em;
+    }
+    
+    .banner-escrita {
+        width: 70%;
+        margin-left: 15%;
     }
 
     .banner-logo {
         width: 50%;
-        bottom: -40%;
+        bottom: -170%;
     }
 
     .saiba-mais-petcomp-logo {
         width: 20%;
+    }
+
+    .icons-organizadores {
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .icons-organizadores >img {
+        width: 30%;
     }
 }
 
