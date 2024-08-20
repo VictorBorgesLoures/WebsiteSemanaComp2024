@@ -125,7 +125,7 @@ tbody > tr:nth-child(odd) {
 .atividades-content {
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -248,7 +248,7 @@ tbody > tr:nth-child(odd) {
     }
 
     .atividade-content {
-        width: 49%;
+        width: 45%;
     }
 
     .atividade-text {
@@ -267,6 +267,7 @@ tbody > tr:nth-child(odd) {
 
     .legenda-icons {
         width: 30%;
+        margin-right: 0;
     }
 
     .legenda-icons > img {
