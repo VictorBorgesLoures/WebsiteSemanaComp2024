@@ -137,6 +137,8 @@ tbody > tr:nth-child(odd) {
     margin: 2% 0;
     border: 1px solid black;
     padding: .5em;
+    box-sizing: border-box;
+    box-shadow: 1px 2px 9px -4px black;
 }
 
 .atividade-content > h4 {
@@ -161,7 +163,7 @@ tbody > tr:nth-child(odd) {
 
 .atividade-text {
     width: 60%;
-    font-weight: 100;
+    font-size: 1.3em;
 }
 
 .atividade-text >p {
@@ -170,7 +172,7 @@ tbody > tr:nth-child(odd) {
 }
 
 .no-mark {
-    border: none;
+    opacity: 0;
 }
 
 .saiba-mais-petcomp-logo {
@@ -201,6 +203,29 @@ tbody > tr:nth-child(odd) {
     margin: 1em;
 }
 
+.legenda {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 3%;
+}
+
+.legenda-icons {
+    font-size: 1.4em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+    box-shadow: 1px 2px 9px -4px black;
+    padding: .5em;
+    width: 15%;
+    margin-right: 5%;
+}
+
+.legenda-icons > img {
+    width: 50%;
+}
+
 
 @media (max-width: 1000px) {
 
@@ -214,6 +239,38 @@ tbody > tr:nth-child(odd) {
 
     .icons-organizadores >img {
         width: 15%;
+    }
+
+    .atividade-box {
+        padding: 5% 1%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .atividade-content {
+        width: 49%;
+    }
+
+    .atividade-text {
+        width: 100%;
+        font-size: 1.3em;
+        padding-top: 5%;
+    }
+
+    .horario-container-flex {
+        width: 100%;
+    }
+
+    .legenda {
+        justify-content: space-around;
+    }
+
+    .legenda-icons {
+        width: 30%;
+    }
+
+    .legenda-icons > img {
+        width: 30%;
     }
 }
 
@@ -263,6 +320,19 @@ tbody > tr:nth-child(odd) {
     .no-mark {
         display: none;
     }
+
+    .legenda {
+        flex-direction: column;
+    }
+
+    .legenda-icons {
+        width: 50%;
+        margin-bottom: 5%;
+    }
+
+    .legenda-icons > img {
+        width: 25%;
+    }
 }
 
 @media (max-width: 400px) {
@@ -281,5 +351,14 @@ tbody > tr:nth-child(odd) {
 
     .atividade-content {
         width: 100%;   
+    }
+
+    .legenda-icons {
+        width: 70%;
+        margin-bottom: 5%;
+    }
+
+    .legenda-icons > img {
+        width: 25%;
     }
 }
