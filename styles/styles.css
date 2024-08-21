@@ -249,6 +249,16 @@ tbody > tr:nth-child(odd) {
     display: none;
 }
 
+.legenda-icons.visita-tecnica {
+    margin: auto;
+    text-align: center;
+    width: 25%;
+}
+
+.legenda-icons.visita-tecnica > p {
+    margin: 0;
+}
+
 @media (max-width: 1000px) {
 
     body {
