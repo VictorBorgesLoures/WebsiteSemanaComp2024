@@ -129,6 +129,10 @@ tbody > tr:nth-child(odd) {
     flex-wrap: wrap;
 }
 
+.atividade-box {
+    box-sizing: border-box;
+}
+
 .atividade-content {
     width: 45%;
     display: flex;
@@ -161,7 +165,7 @@ tbody > tr:nth-child(odd) {
 
 .atividade-text {
     width: 60%;
-    font-weight: 100;
+    word-wrap: break-word;
 }
 
 .atividade-text >p {
@@ -196,7 +200,7 @@ tbody > tr:nth-child(odd) {
     align-items: center;
 }
 
-.icons-organizadores >img {
+.icons-organizadores > a > img {
     width: 8%;
     margin: 1em;
 }
@@ -258,8 +262,8 @@ tbody > tr:nth-child(odd) {
 
     .atividade-content {
         width: 80%;
-        
     }
+
     .no-mark {
         display: none;
     }
