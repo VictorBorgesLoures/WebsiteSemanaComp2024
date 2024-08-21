@@ -146,6 +146,7 @@ tbody > tr:nth-child(odd) {
     font-weight: bold;
     text-align: center;
     width: 100%;
+    
 }
 
 .atividade-box {
@@ -226,6 +227,9 @@ tbody > tr:nth-child(odd) {
     width: 50%;
 }
 
+.legenda {
+    display: none;
+}
 
 @media (max-width: 1000px) {
 
@@ -324,6 +328,7 @@ tbody > tr:nth-child(odd) {
 
     .legenda {
         flex-direction: column;
+        display: flex;
     }
 
     .legenda-icons {
